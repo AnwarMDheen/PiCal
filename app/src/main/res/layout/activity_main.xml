@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/BottomNav"
+
+        android:name="com.example.navi_bar.GstFragment"
+        tools:layout="@layout/fragment_gst">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+    <LinearLayout
+        android:id="@+id/BottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/gstLayout"
+            android:background="@drawable/round_back_gst"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/gstimg"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/gst_selected"
+                />
+
+            <TextView
+                android:id="@+id/gsttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GST"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/UnitConvert"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/Unitimg"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/unit_con"
+                />
+
+            <TextView
+                android:id="@+id/Unittxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit Conversion"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/NumberSystem"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/Numimg"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/num_con"
+                />
+
+            <TextView
+                android:id="@+id/numtxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number System"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SciFi"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/scifiimg"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/noun_profile_1014248"
+                />
+
+            <TextView
+                android:id="@+id/Scifitxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

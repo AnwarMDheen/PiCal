@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    tools:context=".ScifiFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/noun_camera_561804"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/outguideline2"
+        app:layout_constraintStart_toStartOf="@+id/outguideline"
+        app:layout_constraintTop_toTopOf="@+id/outguideline3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:hint="Name"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:errorTextColor="#FF0000"
+        app:counterEnabled="true"
+        app:counterMaxLength="75"
+        app:helperText="*Required"
+        app:helperTextTextColor="#FF0000"
+        app:counterTextColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/outguideline2"
+        app:layout_constraintStart_toStartOf="@+id/outguideline"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:maxLength="75"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Address"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:hint="Address"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="200"
+        app:counterTextColor="@color/white"
+        app:errorTextColor="#FF0000"
+        app:helperText="*Required"
+        app:helperTextTextColor="#FF0000"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/outguideline2"
+        app:layout_constraintStart_toStartOf="@+id/outguideline"
+        app:layout_constraintTop_toBottomOf="@+id/Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AddressText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:maxLength="200" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobilenumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:hint="Mobile No"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:counterTextColor="@color/white"
+        app:errorTextColor="#FF0000"
+        app:helperText="*Required"
+        app:helperTextTextColor="#FF0000"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/outguideline2"
+        app:layout_constraintStart_toStartOf="@+id/outguideline"
+        app:layout_constraintTop_toBottomOf="@+id/Address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobilenumb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/GSTIn"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:hint="GSTIN"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:counterTextColor="@color/white"
+        app:errorTextColor="#FF0000"
+        app:helperText="*Required"
+        app:helperTextTextColor="#FF0000"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/outguideline2"
+        app:layout_constraintStart_toStartOf="@+id/outguideline"
+        app:layout_constraintTop_toBottomOf="@+id/mobilenumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/GstInNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/outguideline2"
+        app:layout_constraintStart_toStartOf="@+id/outguideline"
+        app:layout_constraintTop_toBottomOf="@+id/GSTIn"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        >
+
+
+    </Switch>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Add Your Logo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+    </TextView>
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outguideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outguideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

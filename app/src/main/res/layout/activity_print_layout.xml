@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".printLayout"
+    android:background="#0C0C0C"
+    >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_450sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+
+    </View>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ItemName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:counterTextColor="@color/white"
+        app:errorTextColor="#FF0000"
+        app:helperTextTextColor="#FF0000"
+        app:hintTextColor="@color/white"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ItemNameText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:textColorLink="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Quantity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:hint="Quantity"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:counterTextColor="@color/white"
+        app:errorTextColor="#FF0000"
+        app:helperTextTextColor="#FF0000"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/ItemName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/QuantityText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:textColorLink="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CGST % :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cgstout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:gravity="end">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SGST % :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sgstout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:gravity="end">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IGST % :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/igstout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:gravity="end">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/AddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="ADD"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+
+            >
+
+        </com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/PrintButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Print"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

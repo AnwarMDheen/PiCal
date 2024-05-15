@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Navi_bar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="UNIT">Unit Converter</string>
+    <string name="history">History</string>
+    <string name="edit">Edit</string>
+    <string name="_minus">-</string>
+    <string name="_plus">+</string>
+    <string name="multiply">×</string>
+    <string name="divide">÷</string>
+    <string name="brackets">( )</string>
+    <string name="backspace">⌫</string>
+    <string name="percent">%</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+    <string name="c">C</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="__5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="_5">-5%</string>
+    <string name="_12">-12%</string>
+    <string name="_18">-18%</string>
+    <string name="_28">-28%</string>
+    <string name="_5_">+5%</string>
+    <string name="_12_">+12%</string>
+    <string name="_18_">+18%</string>
+    <string name="_28_">+28%</string>
+    <string-array name="numbersys">
+        <item>binary</item>
+        <item>decimal</item>
+        <item>hexadecimal</item>
+        <item>octal</item>
+    </string-array>
+</resources>

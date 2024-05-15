@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".Edit">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Change GST Percent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_150sdp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/ET1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_26sdp"
+            android:background="@drawable/editcorners"
+            android:gravity="center"
+            android:hint="+5%"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_16ssp"
+
+            >
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ET2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_26sdp"
+            android:background="@drawable/editcorners"
+            android:gravity="center"
+            android:hint="+12%"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_16ssp">
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ET3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_26sdp"
+            android:background="@drawable/editcorners"
+            android:gravity="center"
+            android:hint="+18%"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_16ssp">
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ET4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editcorners"
+            android:gravity="center"
+            android:hint="+28%"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_16ssp">
+
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_36sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <EditText
+            android:id="@+id/ET5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_26sdp"
+            android:background="@drawable/editcorners"
+            android:gravity="center"
+            android:hint="-5%"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_16ssp"
+
+            >
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ET6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_26sdp"
+            android:background="@drawable/editcorners"
+            android:gravity="center"
+            android:hint="-12%"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_16ssp">
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ET7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_26sdp"
+            android:background="@drawable/editcorners"
+            android:gravity="center"
+            android:hint="-18%"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_16ssp">
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ET8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editcorners"
+            android:gravity="center"
+            android:hint="-28%"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_16ssp">
+
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18ssp"
+        android:backgroundTint="#2B2B2B"
+        android:text="Save"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+
+    </com.google.android.material.button.MaterialButton>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2B2B2B"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="reset to default"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SaveButton">
+
+
+    </com.google.android.material.button.MaterialButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
