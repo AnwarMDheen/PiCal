@@ -1,7 +1,9 @@
-Ongoing team Project
+## Ongoing team Project
 
-Team:
+## Team:
+
 Mohamed Anwardheen M
+
 Akash R 
 
 Developed In Android Studio (Java with Gradle Build)
