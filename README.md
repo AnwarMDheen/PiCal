@@ -3,12 +3,11 @@
 ## Team:
 
 Mohamed Anwardheen M
-
 Akash R 
 
-Developed In Android Studio (Java with Gradle Build)
+## Developed In Android Studio (Java with Gradle Build)
 
- Features: 
+## Features: 
 
  1. Invoice Printing Customization
 
